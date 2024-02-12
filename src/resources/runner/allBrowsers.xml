@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SIAE NMS Test Cases" thread-count="3">
+	<listeners>
+		<listener class-name="util.ExtentReportITestListener">
+		</listener>
+	</listeners>
+
+	<test name="Chrome">
+		<parameter name="browser" value="chrome" />
+
+		<classes>
+			<class name="testcases.VerifyLoginPageTest" />
+			<class name="testcases.verifyErrorMessageForInvalidCredsTest" />
+			<class name="testcases.VerifyPTPPageTest" />
+			<class name="testcases.VerifyDifferentIconsOnPTPPageTest" />
+			<class name="testcases.VerifySETSPageTest" />
+
+		</classes>
+	</test>
+
+	<test name="Firefox">
+		<parameter name="browser" value="firefox" />
+
+		<classes>
+
+		</classes>
+
+	</test>
+
+	<test name="Edge">
+		<parameter name="browser" value="edge" />
+
+		<classes>
+
+		</classes>
+	</test>
+</suite>

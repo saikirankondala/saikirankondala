@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="CluCloud Test Automation Suite" thread-count="3"
+       parallel="tests">
+
+    <listeners>
+        <listener class-name="util.ExtentReportITestListener">
+        </listener>
+    </listeners>
+
+    <test name="Chrome">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+<!--            <class name="testcases.CluCloud_Home"/>-->
+            <class name="testcases.CluCloud_Home_PTPCount"/>
+<!-- -***********************                          USER MANAGEMENT TAB                  **************************************************** &ndash;&gt;&ndash;&gt;&ndash;&gt;-->
+<!--            <class name="testcases.UserManagement_Manager"/>-->
+<!--            <class name="testcases.UserManagement_Executive"/>-->
+<!--            <class name="testcases.UserManagement_CPuser"/>-->
+<!--            <class name="testcases.UserManagement_Inactive"/>-->
+<!--            <class name="testcases.UserManagement_ReadOnlyManager"/>-->
+<!--&lt;!&ndash;&lt;!&ndash;*********************************                             Payments                                                             *********************&ndash;&gt;&ndash;&gt;&ndash;&gt;&ndash;&gt;-->
+<!--            <class name="testcases.PaymentHistory"/>-->
+<!--            <class name="testcases.NonVisitedPaymentHistory"/>-->
+<!--            <class name="testcases.CashDeposition"/>-->
+<!--            <class name="testcases.Employee_ledger"/>-->
+
+<!--             Work Allocations AllocationsTest cases    -->
+<!--            <class name="testcases.AllocationUploadTest"/>-->
+<!--            <class name="testcases.AllocatedUsersTestWithEmpIDandContactNo"/>-->
+<!--            <class name="testcases.AllocatedUsersTestWithVehicleNo"/>-->
+<!--            <class name="testcases.AllocatedUsersTestWithLoanNo"/>-->
+<!--&lt;!&ndash;             CP_Name Filter testcases in work allocation&ndash;&gt;&ndash;&gt;-->
+<!--            <class name="testcases.AllocatedUsersSearchBar_CPName_Indify"/>-->
+<!--            <class name="testcases.AllocatedUsersSearchBar_CPName_AUBank"/>-->
+<!--            <class name="testcases.AllocatedUsersSearchBar_CPName_BAJAJFINANCE"/>-->
+<!--            <class name="testcases.AllocatedUsersSearchBar_CPName_SRIRAMFINANCE"/>-->
+<!--            <class name="testcases.AllocatedUsersSearchBar_CPName_AllocatedSummary"/>-->
+            <class name="testcases.mailreports"/>
+<!--        <class name="testcases.Telecaller"/>-->
+
+<!--            <class name="testcases.UserManagement"/>-->
+<!--                        <class name="testcases.Graphs_CollectionsTrend"/>-->
+<!--                        <class name="testcases.Graphs_FieldInvestigationTrends"/>-->
+<!--                        <class name="testcases.Graphs_SalesTrend"/>-->
+<!--                        <class name="testcases.Graphs_BranchWiseCollectionsTrend"/>-->
+<!--                        <class name="testcases.Graphs_BranchWiseFieldInvestigation"/>-->
+<!--                        <class name="testcases.Graphs_BranchWiseSale"/>-->
+<!--                        <class name="testcases.Graphs_UPI"/>-->
+
+
+
+        </classes>
+    </test>
+</suite>

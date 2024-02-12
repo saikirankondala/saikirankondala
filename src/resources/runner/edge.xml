@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="CluCloud Test Cases" thread-count="3"
+	parallel="tests">
+
+	<listeners>
+		<listener class-name="util.ExtentReportITestListener">
+		</listener>
+	</listeners>
+
+	<test name="Edge">
+
+		<parameter name="browser" value="edge" />
+<!--		<class name="testcases.AllocatedUsersSearchBar"/>-->
+
+		<classes>
+
+
+
+		</classes>
+	</test>
+
+</suite>
